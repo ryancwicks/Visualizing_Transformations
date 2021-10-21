@@ -1,0 +1,26 @@
+[package]
+name = "preview_transform"
+version = "0.1.0"
+authors = ["Ryan Wicks"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+js-sys = "0.3.55"
+wasm-bindgen = "0.2.78"
+vecmath="1.0.0"
+quaternion = "0.4.1"
+num = "0.4.0"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = [
+  'CanvasRenderingContext2d',
+  'Document',
+  'Element',
+  'HtmlCanvasElement',
+  'Window',
+]
+

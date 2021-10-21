@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <link rel="icon" href="data:;base64,=">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+  </head>
+  <body>
+
+    <script type="module">
+        import init, {main} from './pkg/preview_transform.js'
+
+        async function run () {
+            await init(); //Load the wasm file;
+        }
+
+        run();
+    </script>
+
+
+    <h2>Down X</h2>
+    <canvas id="canvas_down_x" height="250" width="600"></canvas>
+    <h2>Down Y</h2>
+    <canvas id="canvas_down_y" height="250" width="600"></canvas>
+    <h2>Down Z</h2>
+    <canvas id="canvas_down_z" height="250" width="600"></canvas>
+  </body>
+</html>

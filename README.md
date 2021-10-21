@@ -1,2 +1,15 @@
-# Visualizing_Transformations
-This project is a tool for visualizing co-ordinate transformations in a web interface. It's also a chance to try out wasm in rust! 
+# Preview Transforms Tool
+
+This tool is used to preview co-ordinate transformations. It's also an excuse to learn rust WASM.
+
+## Building
+
+```
+wasm-pack build --target web
+```
+
+## Running
+
+```
+python server.py
+```
